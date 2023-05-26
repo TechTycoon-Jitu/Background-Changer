@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .btn {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #aqua {
+            background-color: aquamarine;
+        }
+
+        #violet {
+            background-color: #ce9aff;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #color-switcher {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus architecto repellendus
+        incidunt,
+        perferendis dicta minima facere ducimus voluptates laborum consequuntur laudantium enim quos velit nisi aperiam
+        illo voluptate officia! Adipisci, inventore rem. Ad sed nesciunt nulla quis delectus reprehenderit quidem optio,
+        debitis cumque minima odio officia molestiae voluptatem ab mollitia unde repudiandae consectetur sunt voluptatum
+        tempora. Facere, ea sequi fugiat ipsum iure rem fugit suscipit et repudiandae? Rerum aperiam at sunt, inventore,
+        enim officia error aliquid illum animi eaque iure facere. Explicabo magni amet dolorum corrupti eos deleniti
+        corporis sequi autem repellat molestiae, neque quos doloribus ab ad adipisci quibusdam labore, nostrum modi
+        natus libero vitae cumque a totam provident. Laudantium, nisi! Suscipit amet officia cumque minus eligendi
+        beatae autem aperiam odit totam nam quos libero, saepe incidunt provident in, architecto ipsam fugit ex numquam
+        quae accusamus earum eveniet at voluptas! Necessitatibus, voluptates quibusdam maiores recusandae sint aperiam
+        animi deserunt quidem veritatis nihil ipsam neque in sunt id? Eum natus iusto corporis nulla laudantium quaerat
+        earum. Cumque excepturi labore veritatis voluptate voluptas incidunt beatae autem ut adipisci, deserunt vel
+        asperiores magnam voluptatem unde assumenda dolor odio. Fugit commodi mollitia esse eaque sapiente sunt
+        quibusdam consequuntur velit ullam eos. Id dolor ut ea omnis voluptate, nulla minima eligendi aspernatur
+        distinctio quidem fuga nostrum, voluptas culpa nemo asperiores quo beatae autem deleniti consequuntur illo
+        impedit? Laborum nisi, eligendi eius hic esse ex commodi repellendus dicta animi, pariatur accusantium omnis
+        fuga iste rem dignissimos officia quo ducimus aliquam veniam modi iure. Quasi cupiditate hic doloremque,
+        praesentium libero minima? Nemo necessitatibus ut labore unde quos quisquam in nulla temporibus. Nam, voluptatem
+        odio eum sint necessitatibus mollitia ad inventore dignissimos, sequi tempore numquam illum delectus reiciendis,
+        dolor libero voluptatibus. Odio nobis possimus, labore ullam officiis, modi esse eum velit aliquam in amet. Modi
+        dolores quaerat qui quisquam earum hic molestias quo et iusto sed aspernatur, laudantium sit tempora eligendi
+        consequatur deleniti eos molestiae eius reprehenderit nostrum! Harum consequuntur, fugit inventore accusamus
+        eaque officia ipsa unde deserunt ipsum consequatur facilis dicta eos odit expedita veritatis pariatur?
+        Laboriosam, esse harum. Dignissimos sed sequi repudiandae consectetur aliquid! Suscipit quasi in odit commodi
+        earum accusantium incidunt alias maiores veritatis esse, ratione dolor repellendus ex eius dolorum quisquam
+        error ab. Dignissimos labore corrupti debitis necessitatibus quasi provident, aliquam enim ullam expedita! Odio
+        dolorem sit quasi minima aspernatur cumque animi provident nulla nihil, atque ducimus non mollitia, perferendis
+        deserunt qui dicta quidem eum laborum doloribus, tempore reprehenderit. A, consequatur inventore, magnam
+        quibusdam quam consectetur eos sunt similique in dolores nisi enim reiciendis placeat voluptatem, neque
+        corporis. Ipsa temporibus laboriosam numquam, voluptatum repellat nesciunt fugiat eaque quibusdam ea explicabo!
+        Dolorum adipisci placeat similique rerum suscipit consectetur id inventore nemo quia! Perspiciatis voluptate eum
+        neque vel veritatis laboriosam quia iure labore, quod sed incidunt? Reprehenderit debitis reiciendis perferendis
+        asperiores id esse dolorum exercitationem ea, eligendi voluptas error adipisci aperiam nesciunt illum ipsam,
+        voluptatem tenetur voluptatum soluta? Ipsa quis totam aperiam? Veritatis nisi quis quas ipsa ullam mollitia
+        blanditiis neque odio unde dolore.
+    </p>
+    <script>
+        function changeBG(color) {
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if (color == "#000000") {
+                for (let elm of txt) {
+                    elm.style.color = "white";
+                }
+            }
+            else {
+                for (let elm of txt) {
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
